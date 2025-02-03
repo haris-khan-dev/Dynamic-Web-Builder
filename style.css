@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(19, 18, 18, 0.956);
+    font-family: "Inter", serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn{
+    margin-right: 4rem;
+    margin-top: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding:0.9rem;
+    border-radius: 1.5rem;
+    background: #eeeeee;
+    border: none;
+    
+}
+.container{
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 90rem;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.imageContainer img{
+    border-radius: 0.3rem;
+    width: 14rem;
+    height: 8rem;
+    margin-right: 1rem;
+}
+
+.text{
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    font-size: 14px;
+}
