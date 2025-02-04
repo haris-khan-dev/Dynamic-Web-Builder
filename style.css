@@ -1,31 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgba(19, 18, 18, 0.956);
     font-family: "Inter", serif;
 }
-nav{
+h1{
+    color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    font-size: 40px;
 }
-.btn{
-    margin-right: 4rem;
-    margin-top: 1.5rem;
+.inputContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    margin-top: 8rem;
+}
+
+.input {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 1.5rem auto;
+    padding: 0.5rem 2rem;
     color: rgb(0, 0, 0);
     font-weight: 500;
-    padding:0.9rem;
-    border-radius: 1.5rem;
-    background: #eeeeee;
+    border-radius: 0.5rem;
+    background: #ffffff;
     border: none;
-    
+    transition: .2s all;
 }
-.container{
+
+.btn:active {
+    background-color: rgb(177, 177, 177);
+}
+
+.cardContainer {
     margin-top: 6rem;
     display: flex;
     align-items: center;
@@ -35,7 +61,8 @@ nav{
     height: 100%;
     gap: 1rem;
 }
-.card{
+
+.card {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 90rem;
@@ -44,19 +71,20 @@ nav{
     padding: 1rem;
 }
 
-.imageContainer img{
+.imageContainer img {
     border-radius: 0.3rem;
     width: 14rem;
     height: 8rem;
     margin-right: 1rem;
 }
 
-.text{
+.text {
     margin-bottom: 0.5rem;
     font-weight: 600;
     font-size: 18px;
 }
-.info{
+
+.info {
     display: flex;
     font-size: 14px;
 }

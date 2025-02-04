@@ -3,6 +3,12 @@
 let btn = document.querySelector(".btn");
 
 btn.onclick = function () {
+    
+    const title = document.getElementById('title').value
+    const channel = document.getElementById('channel').value
+    const views = document.getElementById('views').value
+    const date = document.getElementById('date').value
+
     // create card container
     let card = document.createElement("div");
     card.className = "card";
@@ -18,22 +24,30 @@ btn.onclick = function () {
     // create text container
     let textDiv = document.createElement("div");
     textDiv.className = "textContainer";
-    let title = document.createElement("div");
-    title.className = "text";
-    title.textContent = "Introduction to Web development | tutorial # 1";
+
+    // create text
+    let text = document.createElement("div");
+    text.className = "text";
+    text.textContent = `${title}`;
     
     // create info container
     let infoDiv = document.createElement("div");
     infoDiv.className = "info";
-    infoDiv.textContent = "Code with Haris • 1.3M views • 1 day ago";
+    infoDiv.textContent = `${channel} • ${views} • ${date}`;
     
     // inserting elements into there containers
     imageDiv.append(img);
-    textDiv.append(title);
+    textDiv.append(text);
     textDiv.append(infoDiv);
     
     card.append(imageDiv);
     card.append(textDiv);
     
-    document.querySelector(".container").append(card);
+    document.querySelector(".cardContainer").append(card);
+
+    // clear inputs
+    document.getElementById('title').value = ''
+    document.getElementById('channel').value = ''
+    document.getElementById('views').value = ''
+    document.getElementById('date').value = ''
 }
