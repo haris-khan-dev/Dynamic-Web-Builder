@@ -19,7 +19,7 @@ btn.onclick = function () {
     
     // create image 
     let img = document.createElement("img");
-    img.src = "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA";
+    img.src = "";
     
     // create text container
     let textDiv = document.createElement("div");
